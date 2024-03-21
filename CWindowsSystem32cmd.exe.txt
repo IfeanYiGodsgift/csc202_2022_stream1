@@ -1,0 +1,107 @@
+Microsoft Windows [Version 10.0.22631.3296]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git add .
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git -m"Firstcommit"
+unknown option: -mFirst commit
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git -m "First commit"
+unknown option: -m
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git commit -m "First commit: Initial project setup"
+[main 85dfaad] First commit: Initial project setup
+ 2 files changed, 14 insertions(+)
+ create mode 100644 csc2022.env
+ create mode 100644 docker-compose.yml
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/IfeanYiGodsgift/csc202_2022_stream1.git'
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 593 bytes | 118.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/IfeanYiGodsgift/csc202_2022_stream1.git
+   07080b3..85dfaad  main -> main
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        CWindowsSystem32cmd.exe.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git add -A
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git commit -m
+"how to push"
+[main 0b62b82] how to push
+ 1 file changed, 48 insertions(+)
+ create mode 100644 CWindowsSystem32cmd.exe.txt
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.04 KiB | 356.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/IfeanYiGodsgift/csc202_2022_stream1.git
+   85dfaad..0b62b82  main -> main
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    CWindowsSystem32cmd.exe.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git rm CWindowsSystem32cmd.exe.txt
+rm 'CWindowsSystem32cmd.exe.txt'
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git commit -m "Remove CWindowsSystem32cmd.exe.txt"
+[main f1167a6] Remove CWindowsSystem32cmd.exe.txt
+ 1 file changed, 48 deletions(-)
+ delete mode 100644 CWindowsSystem32cmd.exe.txt
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 254 bytes | 127.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/IfeanYiGodsgift/csc202_2022_stream1.git
+   0b62b82..f1167a6  main -> main
+
+C:\Users\GIFT IMUSEH\Documents\csc202-2022\csc202_2022_stream1>
