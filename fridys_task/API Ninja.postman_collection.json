@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "c29004fd-fd09-48c8-8d69-6c75990cd6dd",
+		"name": "API Ninja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25283557"
+	},
+	"item": [
+		{
+			"name": "Fun Fact",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "b5tT2AjnPtbuxshRAdTzqQ==q54POJUlOihSBUCE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.api-ninjas.com/v1/facts?limit=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"api-ninjas",
+						"com"
+					],
+					"path": [
+						"v1",
+						"facts"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bucket List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Api-Key",
+						"value": "b5tT2AjnPtbuxshRAdTzqQ==q54POJUlOihSBUCE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.api-ninjas.com/v1/bucketlist",
+					"protocol": "https",
+					"host": [
+						"api",
+						"api-ninjas",
+						"com"
+					],
+					"path": [
+						"v1",
+						"bucketlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Single Message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJlbWFpbCI6ImV0b3Blb2pvQGdtYWlsLmNvbSIsImZpcnN0TmFtZSI6IkVtbWFudWVsIiwibGFzdE5hbWUiOiJUb3BlLU9qbyIsInBob25lTnVtYmVyIjoiMjM0ODAyOTE1MDgxMiIsInVzZXJWZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTY5MTc1NzU5N30.mKoJSaJbe_4K4ourQHOzFa5u0Wx3xpjcIq2hjEOptXA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"senderId\": \"Broadbased\",\n    \"userId\": \"etopeojo@gmail.com\",\n    \"message\": \"Beautiful things happen in Unity! BBC - 18th August\",\n    \"messageType\": \"transactional\",\n    \"recipientInputMode\":\"manual_input\",\n    \"recipients\": [\n        \"09067074483\"\n    ],\n    \"isScheduled\": false,\n    \"scheduleDateTime\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vas.broadbased.net/smsModule/sms/send/singleMessage",
+					"protocol": "https",
+					"host": [
+						"vas",
+						"broadbased",
+						"net"
+					],
+					"path": [
+						"smsModule",
+						"sms",
+						"send",
+						"singleMessage"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
